@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nargish Cosmetics - About Us</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+  <style>/* Header Styling */
+   .gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+    
+    header {
+    
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #ddd; /* Light gray border */
+    }
+    
+    header h1 {
+      margin: 0;
+      font-size: 4em;
+      color: #ffffff;
+        padding: 20px 0;
+        border-bottom: 2px solid hsl(193, 95%, 68%);
+       
+    }
+    nav {
+      margin-top: 10px;
+    }
+    
+    nav a {
+      text-decoration: none;
+      color: #ffffff; /* Blue color for links */
+      margin: 0 15px;
+      font-size: 2em;
+    }
+    
+    nav a:hover {
+      text-decoration: underline;
+    }
+     
+    .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #323131; /* Adds a light gray border around the container */
+  border-radius: 12px; /* Rounds the corners of the container border */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+
+}
+
+.row {
+  display: flex;
+  flex-wrap: nowrap; /* Ensures all columns stay in one row */
+  width: 100%; /* Takes full width of the container */
+}
+
+.col-lg-3, .col-sm-12 {
+  flex: 0 1 23%; /* Ensures four columns fit within one row, with some space between */
+  text-align: center;
+  padding: 10px;
+}
+
+.col-lg-3 img, .col-sm-12 img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 100%;
+  height: auto;
+  border: 3px solid #ddd; /* Adds a light gray border around the image */
+  border-radius: 8px;
+}
+
+.col-lg-3 img:hover, .col-sm-12 img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  
+}
+p {
+            background-color: #EB3678; /* Light grey background */
+            padding: 10px;              /* Adds space inside the border */
+            border-radius: 5px;          /* Rounds the corners */
+            border: 1px solid #ccc;      /* Adds a light grey border */
+            font-family: 'Georgia', serif; /* Fancy font styling */
+            text-align: center;         /* Centers the text */
+            font-size: 25px;            /* Sets the font size */
+            color: #e9e9e9;                /* Dark grey text color */
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+        }
+
+        p:hover {
+            background-color: #FB773C;    /* Darker background on hover */
+            color: #fff;               /* White text on hover */
+            transform: scale(1.05);    /* Slightly enlarges the paragraph */
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+        }
+          
+        h1 {
+            font-family: 'Arial', sans-serif;
+            color: #333; /* Default text color */
+            transition: color 0.3s, text-decoration 0.3s;
+            text-align: center;
+        }
+
+        h1:hover {
+            
+            text-decoration: underline; /* Underline effect on hover */
+            transform: translateX(-20px);
+           
+        }
+
+
+
+
+
+
+
+
+
+    
+        .footer-container {
+
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+max-width: 1700px;
+margin: 5 auto;
+padding: 40 30px;
+color: hsl(0, 0%, 0%);
+}
+.footer-section:hover {
+        transform: scale(1.05); /* Slightly enlarge the section on hover */
+        color: hsl(0, 0%, 100%); /* Change text color on hover */
+    }
+.footer-section {
+flex: 1;
+margin: 20px;
+min-width: 200px;
+}
+
+.footer-section h2 {
+font-size: 35px;
+margin-right: 300px;
+
+
+
+
+}
+
+.footer-section ul {
+list-style-type: none;
+padding: 0;
+}
+
+.footer-section ul li {
+margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+color: hsl(0, 0%, 0%);
+text-decoration: none;
+transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+color: #ffffff;
+
+}
+ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+      }
+      ul li {
+          font-size: 20px; /* Menu item font size */
+      }
+      ul li a {
+          text-decoration: none;
+          color: #333; /* Link color */
+      }
+footer-section.social button:hover {
+        background-color: hsl(0, 0%, 100%); /* Change to your preferred color */
+    }
+
+.footer-section p, .footer-section form, .footer-section .social-links {
+margin: 10px 0;
+font-size: 1.5em;
+}
+
+.footer-section input, .footer-section textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+border: none;
+border-radius: 5px;
+
+}
+
+.footer-section button {
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+background-color: #e91e63;
+color: #ffffff;
+cursor: pointer;
+transition: background-color 0.3s;
+
+}
+
+.footer-section button:hover {
+background-color: #c2185b;
+}
+
+.social-icons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .social-icons a {
+        text-decoration: none;
+    }
+    .social-icons img {
+        width: 50px;
+        height: 45px;
+    }
+    h2:hover {
+        color: hsl(0, 0%, 97%) /* Change to your preferred color */
+       
+    }
+    .social-icons img:hover {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+.footer-bottom {
+text-align: center;
+padding: 10px 0;
+border-top: 1px solid #f2ebeb;
+margin-top: 20px;
+}
+    </style>
+</head>
+<body>
+  <section id="title" class="gradient-background">
+
+  
+  <header>
+    <h1>𝓝𝓪𝓻𝓰𝓲𝓼𝓱 𝓒𝓸𝓼𝓶𝓮𝓽𝓲𝓬𝓼</h1>
+    <nav>
+      <a href="faijan.html">𝑯𝒐𝒎𝒆</a>
+      <a href="product.html">𝐩𝐫𝐨𝐝𝐮𝐜𝐭</a>
+      <a href="about.html">𝑨𝒃𝒐𝒖𝒕 𝑼𝒔</a>
+      <a href="contact.html">𝓢𝓮𝓻𝓿𝓲𝓬𝓼</a>
+     
+    </nav>
+  </header>
+</section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-sm-12">
+        <img src="https://www.lakmeindia.com/cdn/shop/files/29825_H-8901030701573.jpg?v=1715685990" alt="techcrunch" height="30">
+        <p> 𝒑𝒓𝒐𝒅𝒖𝒄𝒕𝟏 </p>
+        <p>𝑩𝒖𝒚 𝑵𝒐𝒘</p>
+      </div>
+      <div class="col-lg-3 col-sm-12">
+        <img src="https://www.lakmeindia.com/cdn/shop/files/29837_H-8901030701917.jpg?v=1715685766" alt="mashable" height="30">
+        <p> 𝒑𝒓𝒐𝒅𝒖𝒄𝒕𝟏</p>
+        <p>𝑩𝒖𝒚 𝑵𝒐𝒘</p>
+      </div>
+      <div class="col-lg-3 col-sm-12">
+        <img src="https://www.lakmeindia.com/cdn/shop/files/29845_H-8901030698323.jpg?v=1715166172" alt="bizinsider" height="30">
+        <p> 𝒑𝒓𝒐𝒅𝒖𝒄𝒕𝟏</p>
+      <p> 𝑩𝒖𝒚 𝑵𝒐𝒘</p>
+      </div>
+      <div class="col-lg-3 col-sm-12">
+        <img src="https://www.lakmeindia.com/cdn/shop/files/29779_H-8901030996917.jpg?v=1710918070" alt="tnw" height="30">
+        <p> 𝒑𝒓𝒐𝒅𝒖𝒄𝒕𝟏</p>
+        <p> 𝑩𝒖𝒚 𝑵𝒐𝒘</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-sm-12">
+        <img src="https://www.lakmeindia.com/cdn/shop/files/VBCOMBO1_SummerMakeup_cc889498-360b-4426-aa49-b1f30f4e6f19.jpg?v=1720506630" alt="techcrunch" height="30">
+        <p> 𝒑𝒓𝒐𝒅𝒖𝒄𝒕𝟏 </p>
+        <p>𝑩𝒖𝒚 𝑵𝒐𝒘</p>
+      </div>
+      <div class="col-lg-3 col-sm-12">
+        <img src="https://www.lakmeindia.com/cdn/shop/files/VBCOMBO3_DrySkin.jpg?v=1717071509" alt="mashable" height="30">
+        <p> 𝒑𝒓𝒐𝒅𝒖𝒄𝒕𝟏</p>
+        <p>𝑩𝒖𝒚 𝑵𝒐𝒘</p>
+      </div>
+      <div class="col-lg-3 col-sm-12">
+        <img src="https://www.lakmeindia.com/cdn/shop/files/lipmoussedtc-1.jpg?v=1713875018" alt="bizinsider" height="30">
+        <p> 𝒑𝒓𝒐𝒅𝒖𝒄𝒕𝟏</p>
+      <p> 𝑩𝒖𝒚 𝑵𝒐𝒘</p>
+      </div>
+      <div class="col-lg-3 col-sm-12">
+        <img src="https://www.lakmeindia.com/cdn/shop/files/LAKME-P_M-LIPSTICK-DTC.jpg?v=1717579703" alt="tnw" height="30">
+        <p> 𝒑𝒓𝒐𝒅𝒖𝒄𝒕𝟏</p>
+        <p> 𝑩𝒖𝒚 𝑵𝒐𝒘</p>
+      </div>
+    </div>
+  </div>
+  <h1>𝓜𝓪𝔂𝓫𝓮𝓵𝓵𝓲𝓷𝓮 𝓟𝓻𝓸𝓭𝓾𝓬𝓽</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-sm-12">
+        <img src="https://www.maybelline.co.in/-/media/project/loreal/brand-sites/mny/apac/in/products/face/foundation/fit-me-fresh-tint-with-vitamin-c/module/product-info/shade01/6902395830504-1.jpg?rev=a88857165536424c80b24bdbf84570af&cx=0.7&cy=0.52&cw=315&ch=472&hash=75C56F086A71ABB8F5D5FD96BCE01377" alt="techcrunch" height="30">
+        <p> 𝒑𝒓𝒐𝒅𝒖𝒄𝒕𝟏 </p>
+        <p>𝑩𝒖𝒚 𝑵𝒐𝒘</p>
+      </div>
+      <div class="col-lg-3 col-sm-12">
+        <img src="https://www.maybelline.co.in/-/media/project/loreal/brand-sites/mny/apac/in/products/face/foundation/superstay-foundation/module/product-info/classic-ivory/120-classic-ivory-1.jpg?rev=104841d32e324f00a042267687b85264&cx=0.47&cy=0.38&cw=315&ch=472&hash=D848624B7B9300A66C63F0624B11BFE5" alt="mashable" height="30">
+        <p> 𝒑𝒓𝒐𝒅𝒖𝒄𝒕𝟏</p>
+        <p>𝑩𝒖𝒚 𝑵𝒐𝒘</p>
+      </div>
+      <div class="col-lg-3 col-sm-12">
+        <img src="https://www.maybelline.co.in/-/media/project/loreal/brand-sites/mny/apac/in/products/face/foundation/lumi-matte-foundation/module/product-info/115/6902395970057-01.jpg?rev=964262e0d4c24b49856b5b5b5a16a648&cx=0.45&cy=0.52&cw=315&ch=472&hash=9EE59451C7E232E4A5BECE426E044E6B" alt="bizinsider" height="30">
+        <p> 𝒑𝒓𝒐𝒅𝒖𝒄𝒕𝟏</p>
+      <p> 𝑩𝒖𝒚 𝑵𝒐𝒘</p>
+      </div>
+      <div class="col-lg-3 col-sm-12">
+        <img src="https://www.maybelline.co.in/-/media/project/loreal/brand-sites/mny/apac/in/products/face/foundation/fit-me-tube-foundation/module/product-info/230-natural-buff/fmt-tube_230.jpg?rev=c79c9a8d4d3c43a387da7d01d42b110b&cx=0&cy=0&cw=315&ch=472&hash=43318744E37F9D920CD9330774E7CC0C" alt="tnw" height="30">
+        <p> 𝒑𝒓𝒐𝒅𝒖𝒄𝒕𝟏</p>
+        <p> 𝑩𝒖𝒚 𝑵𝒐𝒘</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-sm-12">
+        <img src="https://www.maybelline.co.in/-/media/project/loreal/brand-sites/mny/apac/in/products/face/powder/fit-me-compact-powder/115-ivory/115-8901526605187-01.jpg?rev=8aad70df112448afa86daba348dc1b10&cx=0.52&cy=0.51&cw=315&ch=472&hash=BBA6EBAC40A8F6C60B0EC8FBC009EB95" alt="techcrunch" height="30">
+        <p> 𝒑𝒓𝒐𝒅𝒖𝒄𝒕𝟏 </p>
+        <p>𝑩𝒖𝒚 𝑵𝒐𝒘</p>
+      </div>
+      <div class="col-lg-3 col-sm-12">
+        <img src="https://www.maybelline.co.in/-/media/project/loreal/brand-sites/mny/apac/in/products/face/powder/fit-me-matte-poreless-ultimate-powder-foundation/110-porcelain/110-porcelain-01.jpg?rev=402988dce34a4eca91d54d5b5835f603&cx=0.66&cy=0.45&cw=315&ch=472&hash=4E488334BCEE67232F165099523B0B4C" alt="mashable" height="30">
+        <p> 𝒑𝒓𝒐𝒅𝒖𝒄𝒕𝟏</p>
+        <p>𝑩𝒖𝒚 𝑵𝒐𝒘</p>
+      </div>
+      <div class="col-lg-3 col-sm-12">
+        <img src="https://www.maybelline.co.in/-/media/project/loreal/brand-sites/mny/apac/in/products/face/powder/fit-me-matte-poreless-powder/1-closed-packshot-330.jpg?rev=5bcac0290faa49ae939ca1382f998fc5&cx=0.51&cy=0.5&cw=315&ch=472&hash=85835A75DA8AC321F148908941555F91" alt="bizinsider" height="30">
+        <p> 𝒑𝒓𝒐𝒅𝒖𝒄𝒕𝟏</p>
+      <p> 𝑩𝒖𝒚 𝑵𝒐𝒘</p>
+      </div>
+      <div class="col-lg-3 col-sm-12">
+        <img src="https://www.maybelline.co.in/-/media/project/loreal/brand-sites/mny/apac/in/products/face/contouring/facestudio-master-chrome-metallic-highlighter-powder/master-chrome-highlighter-a.jpg?rev=2de35b39c56845f2a78d83c819be7d54&cx=0&cy=0&cw=315&ch=472&hash=38315DACFE7D92073CBEEB38B13189F2" alt="tnw" height="30">
+        <p> 𝒑𝒓𝒐𝒅𝒖𝒄𝒕𝟏</p>
+        <p> 𝑩𝒖𝒚 𝑵𝒐𝒘</p>
+      </div>
+    </div>
+  </div>
+  <h1>𝓛'𝓞𝓻é𝓪𝓵 𝓟𝓻𝓸𝓭𝓾𝓬𝓽</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-sm-12">
+        <img src="https://www.lorealparis.co.in/-/media/project/loreal/brand-sites/oap/apac/in/local-products/hair/hair-care/6923700970449_packshot.png?rev=1a9d41b484bb41e28a1417c0fc67e994&w=100&hash=76E81D0274E1F73A420FFE2F3D069A7242EA031B" alt="techcrunch" height="30">
+        <p> 𝒑𝒓𝒐𝒅𝒖𝒄𝒕𝟏 </p>
+        <p>𝑩𝒖𝒚 𝑵𝒐𝒘</p>
+      </div>
+      <div class="col-lg-3 col-sm-12">
+        <img src="https://www.lorealparis.co.in/-/media/project/loreal/brand-sites/oap/apac/in/local-products/hair/hair-care/8901526103430_packshot.png?rev=1c2a34bec15b44a9bbbb5115ce3a4951&w=100&hash=1792D508CFEFDB7415AA15D35BF2CF00CA7FB8E3" alt="mashable" height="30">
+        <p> 𝒑𝒓𝒐𝒅𝒖𝒄𝒕𝟏</p>
+        <p>𝑩𝒖𝒚 𝑵𝒐𝒘</p>
+      </div>
+      <div class="col-lg-3 col-sm-12">
+        <img src="https://www.lorealparis.co.in/-/media/project/loreal/brand-sites/oap/apac/in/local-products/hair/hair-care/8901526103225_packshot_new.png?rev=171822a90bb74cada23f463610a8cc8a&w=100&hash=6128ED342A32EB1E201713A3EAD4B091D61B4CC6" alt="bizinsider" height="30">
+        <p> 𝒑𝒓𝒐𝒅𝒖𝒄𝒕𝟏</p>
+      <p> 𝑩𝒖𝒚 𝑵𝒐𝒘</p>
+      </div>
+      <div class="col-lg-3 col-sm-12">
+        <img src="https://www.lorealparis.co.in/-/media/project/loreal/brand-sites/oap/apac/in/local-products/hair/hair-care/8901526103423_packshot.png?rev=1d0daf4341654244917c284a1635510d&w=100&hash=EBD34B8198ADB57CCB6E712832EEB88344E0EA96" alt="tnw" height="30">
+        <p> 𝒑𝒓𝒐𝒅𝒖𝒄𝒕𝟏</p>
+        <p> 𝑩𝒖𝒚 𝑵𝒐𝒘</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- About page content goes here -->
+  <section id="title" class="gradient-background">
+
+    <div class="container col-xxl-8 px-4 pt-5">
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section about">
+            <h2>𝓝𝓪𝓻𝓰𝓲𝓼𝓱 𝓒𝓸𝓼𝓶𝓮𝓽𝓲𝓬𝓼</h2>
+            <p>𝑨𝒕 𝑵𝒂𝒓𝒈𝒊𝒔𝒉 𝑪𝒐𝒔𝒎𝒆𝒕𝒊𝒄𝒔, 𝒘𝒆 𝒃𝒆𝒍𝒊𝒆𝒗𝒆 𝒊𝒏 𝒃𝒆𝒂𝒖𝒕𝒚 𝒕𝒉𝒂𝒕 𝒆𝒎𝒑𝒐𝒘𝒆𝒓𝒔. 𝑶𝒖𝒓 𝒑𝒓𝒐𝒅𝒖𝒄𝒕𝒔 𝒂𝒓𝒆 𝒄𝒓𝒂𝒇𝒕𝒆𝒅 𝒘𝒊𝒕𝒉 𝒕𝒉𝒆 𝒇𝒊𝒏𝒆𝒔𝒕 𝒊𝒏𝒈𝒓𝒆𝒅𝒊𝒆𝒏𝒕𝒔 𝒕𝒐 𝒆𝒏𝒔𝒖𝒓𝒆 𝒚𝒐𝒖 𝒍𝒐𝒐𝒌 𝒂𝒏𝒅 𝒇𝒆𝒆𝒍 𝒚𝒐𝒖𝒓 𝒃𝒆𝒔𝒕.</p>
+        </div>
+        <div class="footer-section links">
+            <h2>𝑸𝒖𝒊𝒄𝒌 𝑳𝒊𝒏𝒌𝒔</h2>
+            <ul>
+                <li><a href="#">𝓗𝓸𝓶𝓮</a></li>
+                <li><a href="#">𝓐𝓫𝓸𝓾𝓽 𝓤𝓼</a></li>
+                <li><a href="#">𝓟𝓻𝓸𝓭𝓾𝓬𝓽𝓼</a></li>
+                <li><a href="#">𝓢𝓮𝓻𝓿𝓲𝓬𝓼</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section contact-form">
+           <h2>𝑭𝒐𝒍𝒍𝒐𝒘 𝑴𝒆</h2>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="https://img.icons8.com/?size=100&id=118568&format=png&color=000000" alt="Facebook">
+                </a>
+               
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3670/3670125.png" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com/in/faijan-ali-8b3720228?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                    <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+        <div class="footer-section social">
+            <h2>𝑪𝒐𝒏𝒕𝒂𝒄𝒕 𝑼𝒔</h2>
+            
+            <form action="#" method="post">
+                <input type="afaijan043@mail.com" name="email" placeholder="apnakaam@mail.com">
+                <textarea name="massege" placeholder="Your query"></textarea>
+                <button type="submit">Send</button>
+            </form>
+       
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 Nargish Cosmetics | Designed by Faijan
+    </div>
+</footer>
+</section>
+</body>
+</html>

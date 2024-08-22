@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Style Header and Footer</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #101820;
+        color: #f0f0f0;
+    }
+    
+   /* Gradient Background */
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Header and Footer Container */
+.header .container,
+.footer .container {
+  width: 1000%;
+  max-width: 1700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Header Title */
+.header h1 {
+  font-size: 5em;
+  position: absolute;
+  top: 0; /* Position at the top */
+  left: 100px; /* Align to the left */
+  margin: 0; /* Remove default margin */
+  padding: 30px; /* Add padding */
+  text-align: center;
+}
+
+/* Header Title Hover Effect */
+.header h1:hover {
+  color: hsl(0, 0%, 94%); /* Change text color on hover */
+  transform: scale(1.3); /* Slightly enlarge the text on hover */
+}
+
+/* Icon Styles */
+.icons {
+  display: flex;
+  align-items: center;
+  margin-right: 15px; /* Space between icons and text */
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 18px; /* Space between icons */
+  border-radius: 70%; /* Circular icons */
+  border: 2px solid #61dafb; /* Border around icons */
+  background-color: #fff; /* Background color for icons */
+}
+
+/* Remove margin on the last icon */
+.icon:last-child {
+  margin-right: 0;
+}
+
+/* Icon Hover Effect */
+.icon:hover {
+  transform: scale(1.3); /* Enlarge the icon on hover */
+}
+
+/* Navbar Styles */
+.navbar ul {
+  list-style-type: none;
+  padding: 10;
+  margin: 100;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: hsl(193, 95%, 68%);
+  width: 100px;
+  display: block;
+  padding: 70px 70px;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Navbar Hover Effect */
+.navbar a:hover {
+  color: hsl(0, 0%, 100%);
+  transform: scale(1.5);
+}
+
+    .gif-container {
+    display: flex;                /* Center the image horizontally and vertically */
+    justify-content: left;      /* Center horizontally */
+    align-items: left;          /* Center vertically */
+    height: 400px,300px;                /* Set a height for the container */
+    border: 4px solid hsl(193, 95%, 68%);    /* Optional: border around the container */
+    padding: 20px;                /* Optional: padding inside the container */
+            
+    border-radius: 10px;          /* Optional: rounded corners */
+    overflow: hidden;             /* Optional: hide any overflow */
+}
+
+.gif-container img {
+    max-width: 100%,90,30,20;              /* Ensure the image doesn't overflow the container */
+    height: auto;                 /* Maintain aspect ratio */
+    border-radius: 10px;          /* Optional: rounded corners for the image */
+    transition: transform 0.3s;   /* Smooth transition for scaling effect */
+}
+
+.gif-container img:hover {
+    transform: scale(1.1);  /* Slightly enlarge the image on hover */
+          
+}
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 20%;
+}
+.grid-container {
+            
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 columns */
+            gap: 16px;
+            padding: 20px;
+            grid-auto-rows: min-content; /* Ensures row height adjusts to content */
+        }
+     
+       
+        .grid-item {
+            
+            border: 4px solid #130d0d; 
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            padding: 8px;
+        }
+
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .grid-item h3 {
+            margin: 8px 0 4px;
+            font-size: 1.2em;
+        }
+
+     
+        .grid-item:hover {
+           
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .grid-item:hover img {
+            transform: scale(1.05); /* Zoom effect */
+            animation: bounce 1s;
+            border: 4px solid #1515cd;
+        }
+        .slider {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 0.6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: #1f2424;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto div {
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+.auto-btn1 {
+    background: #0d0d0e;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background: #40D3DC;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background: #40D3DC;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background: #40D3DC;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background: #40D3DC;
+}
+  
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Create two equal columns */
+    gap: 10px; /* Space between columns */
+}
+
+.grid-item {
+    padding: 20px; /* Padding inside columns */
+    background-color: #f0f0f0; /* Background color for columns */
+    border: 1px solid #ddd; /* Border for columns */
+}
+
+
+
+       /* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+/*only contrainer use this css code
+/* Footer Container */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1800px;
+    margin: 0 auto; /* Corrected margin */
+    padding: 30px 20px; /* Corrected padding */
+   
+    color: hsl(0, 0%, 100%); /* Text color */
+}
+
+/* Footer Section Hover */
+.footer-section:hover {
+    transform: scale(1.05); /* Slightly enlarge the section on hover */
+    color: hsl(0, 0%, 100%); /* Change text color on hover */
+}
+
+/* Footer Section Styles */
+.footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 200px;
+}
+
+/* Heading Styles */
+.footer-section h2 {
+    font-size: 40px; /* Adjusted font size */
+    margin-bottom: 15px; /* Adjusted margin */
+    color: hsl(0, 0%, 0%); /* White color for headings */
+}
+.footer-section.links h2 {
+    font-size: 30px; /* Increase heading font size */
+}
+
+.footer-section.links ul li a {
+    font-size: 22px; /* Increase link font size */
+}
+
+/* List Styles */
+.footer-section ul {
+    list-style-type: none;
+    padding: 10;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: hsl(0, 0%, 0%); /* White color for links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ffffff; /* Change link color on hover */
+}
+
+/* Form and Input Styles */
+.footer-section form {
+    margin: 10px 0;
+}
+
+.footer-section input, .footer-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd; /* Added border for input fields */
+    border-radius: 5px;
+    
+}
+.footer-section p {
+    font-size: 20px; /* Adjust font size as needed */
+    line-height: 1.6; /* Optional: improves readability */
+    color: hsl(0, 0%, 1%); /* Ensures text color is white */
+}
+.footer-section p:hover {
+    color: hsl(0, 100%, 99%); /* Changes the text color when hovered */
+   
+}
+.footer-section button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e91e63;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-section button:hover {
+    background-color: #020202;
+}
+
+/* Social Icons Styles */
+/* Social Icons Column Style */
+.social-icons {
+    display: flex;
+    flex-direction: column; /* Arrange icons in a column */
+    align-items: center; /* Center align icons horizontally */
+    gap: 15px; /* Space between icons */
+}
+
+.social-icons a {
+    text-decoration: none;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+
+/* Footer Bottom Styles */
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #f2ebeb;
+    margin-top: 20px;
+    color: hsl(0, 0%, 100%); /* White color for footer bottom text */
+}
+
+     
+    </style>
+</head>
+<body>
+    <section id="title" class="gradient-background">
+
+        <div class="container col-xxl-8 px-4 pt-5">
+    <header class="header">
+        <div class="container">
+            <h1>𝓝𝓪𝓻𝓰𝓲𝓼𝓱 𝓬𝓸𝓼𝓶𝓮𝓽𝓲𝓬𝓼!</h1>
+            <span class="icons">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.e1KNYwnuhNwNj7_-98yTRwHaF7&pid=Api&rs=1&c=1&qlt=95&w=144&h=115" alt="Profile Icon 1" class="icon">
+                <img src="https://via.placeholder.com/30" alt="Profile Icon 2" class="icon">
+            </span>
+           
+           <div class="navbar">
+                <ul>
+                    
+                    <li><a href="faijan.html">𝓗𝓸𝓶𝓮</a></li>
+                    <li><a href="product.html">𝑷𝒓𝒐𝒅𝒖𝒄𝒕 </a></li>
+                    <li><a href="about.html">𝑨𝒃𝒐𝒖𝒕 </a></li>
+                    <li><a href="contact.html">𝓢𝓮𝓻𝓿𝓲𝓬𝓼</a></li>
+                </ul>
+
+            
+        </div>
+        
+        <div class="gif-container">
+            <img src="https://media0.giphy.com/media/gF7rF4HEJ7W33jMsfc/giphy.gif" alt="https://media0.giphy.com/media/gF7rF4HEJ7W33jMsfc/giphy.gif">
+          </div>
+    </header>
+</section>
+   
+<!-- Title -->
+<section id="title" class="gradient-background">
+
+    <div class="container col-xxl-8 px-4 pt-5">
+
+
+          <div class="grid-container">
+    <div class="grid-item">
+        <img src=" https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1723370931_mamaearth-skincare.jpg" alt="Product 1">
+        
+        
+    </div>
+    <div class="grid-item">
+        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1723398913_nybae-3.jpg" alt="Product 2">
+        
+        
+    </div>
+    <div class="grid-item">
+        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1723398964_alps-goodness-3.jpg" alt="Product 3">
+     
+        
+    </div>
+    <div class="grid-item">
+        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1723370932_maybelline.jpg" alt="Product 4">
+       
+    </div>
+</div>
+<div class="grid-container">
+  <div class="grid-item">
+      <img src="https://media6.ppl-media.com/tr:w-582,ar-24-31,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1723380996_3_fiama_locked.jpg" alt="Product 1">
+    
+  </div>
+  <div class="grid-item">
+      <img src="https://media6.ppl-media.com/tr:w-582,ar-24-31,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1723380999_2_lbp_locked.jpg" alt="Product 2">
+      
+      
+  </div>
+  <div class="grid-item">
+      <img src="https://media6.ppl-media.com/tr:w-582,ar-24-31,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1723381002_1_everyuth_locked.jpg" alt="Product 3">
+ 
+  </div>
+  <div class="grid-item">
+      <img src="https://media6.ppl-media.com/tr:w-582,ar-24-31,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1723381006_12_lorealparis_livenow.jpg" alt="Product 4">
+      
+      
+  </div>
+</div>
+</section>   
+<section id="title" class="gradient-background">
+    <div class="slider">
+        <div class="slides">
+            <!-- Radio buttons for navigation -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+    
+            <!-- Slide images -->
+            <div class="slide first">
+                <img src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1723436891_gv-ubtan-night-cream-banner_web.jpg" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="https://media6.ppl-media.com/tr:dpr-2,dpr-2/mediafiles/ecomm/misc/1723317987_lakme_hul_skin_2596x836.jpeg" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1723441398_lakme_hul_makeup_2596x836.jpeg" alt="Image 3">
+            </div>
+            <div class="slide">
+                <img src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1723406032_garnier_pooja_night_serum_copy_1_2596x836-1.jpeg" alt="Image 4">
+            </div>
+    
+            <!-- Automatic navigation -->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+        </div>
+    
+        <!-- Manual navigation -->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+    </div>
+    
+    <section id="title" class="gradient-background">
+
+        <div class="container col-xxl-8 px-4 pt-5">
+    
+    
+              <div class="grid-container">
+        <div class="grid-item">
+            <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1723398927_gv.jpg" alt="Product 1">
+            
+            
+        </div>
+        <div class="grid-item">
+            <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1723398772_tdc.jpg" alt="Product 2">
+            
+            
+        </div>
+        <div class="grid-item">
+            <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1723437198_minimalist.jpg" alt="Product 3">
+         
+            
+        </div>
+        <div class="grid-item">
+            <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1723370946_swiss-beauty.jpg" alt="Product 4">
+           
+        </div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-item">
+          <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1723441400_lakme_makeup-copy.jpg" alt="Product 1">
+        
+      </div>
+      <div class="grid-item">
+          <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1723370908_dot-key.jpg" alt="Product 2">
+          
+          
+      </div>
+      <div class="grid-item">
+          <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1723398943_dermdoc3-1.jpg" alt="Product 3">
+     
+      </div>
+      <div class="grid-item">
+          <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1723370941_pilgrim.jpg">
+          
+          
+      </div>
+    </div>
+    </section> 
+
+        
+    <main class="main">
+        <div class="grid-item">
+            <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1723398712_cetaphil-3.jpg" alt="Image 1">
+        </div>
+        <div class="grid-item">
+            <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1723370983_renee.jpg" alt="Image 2">
+        </div>
+    </main>
+    
+    <main class="main">
+        <div class="grid-item">
+            <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1723370988_streax-streax-pro.jpg" alt="Image 1">
+        </div>
+        <div class="grid-item">
+            <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1723370970_loreal-proff.jpg" alt="Image 2">
+        </div>
+    </main>
+    <main class="main">
+        <div class="grid-item">
+            <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1723436822_aclt_combo.jpg" alt="Image 1">
+        </div>
+        <div class="grid-item">
+            <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1723370970_loreal-proff.jpg" alt="Image 2">
+        </div>
+    </main>
+    
+
+    <section class="container col-xxl-8 px-4 pt-5">
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>𝓝𝓪𝓻𝓰𝓲𝓼𝓱 𝓒𝓸𝓼𝓶𝓮𝓽𝓲𝓬𝓼</h2>
+                <p>𝑨𝒕 𝑵𝒂𝒓𝒈𝒊𝒔𝒉 𝑪𝒐𝒔𝒎𝒆𝒕𝒊𝒄𝒔, 𝒘𝒆 𝒃𝒆𝒍𝒊𝒆𝒗𝒆 𝒊𝒏 𝒃𝒆𝒂𝒖𝒕𝒚 𝒕𝒉𝒂𝒕 𝒆𝒎𝒑𝒐𝒘𝒆𝒓𝒔. 𝑶𝒖𝒓 𝒑𝒓𝒐𝒅𝒖𝒄𝒕𝒔 𝒂𝒓𝒆 𝒄𝒓𝒂𝒇𝒕𝒆𝒅 𝒘𝒊𝒕𝒉 𝒕𝒉𝒆 𝒇𝒊𝒏𝒆𝒔𝒕 𝒊𝒏𝒈𝒓𝒆𝒅𝒊𝒆𝒏𝒕𝒔 𝒕𝒐 𝒆𝒏𝒔𝒖𝒓𝒆 𝒚𝒐𝒖 𝒍𝒐𝒐𝒌 𝒂𝒏𝒅 𝒇𝒆𝒆𝒍 𝒚𝒐𝒖𝒓 𝒃𝒆𝒔𝒕.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>𝑸𝒖𝒊𝒄𝒌 𝑳𝒊𝒏𝒌𝒔</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section contact-form">
+               <h2>𝑭𝒐𝒍𝒍𝒐𝒘 𝑴𝒆</h2>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="https://img.icons8.com/?size=100&id=118568&format=png&color=000000" alt="Facebook">
+                    </a>
+                   
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/128/3670/3670125.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/faijan-ali-8b3720228?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                        <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section social">
+                <h2>𝑪𝒐𝒏𝒕𝒂𝒄𝒕 𝑼𝒔</h2>
+                
+                <form action="afaijan043@gmail.com" method="post">
+                    <input type="afaijan043@mail.com" name="email" placeholder="apnakaam@mail.com">
+                    <textarea name="massege" placeholder="Your query"></textarea>
+                    <button type="">Send</button>
+                </form>
+           
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Nargish Cosmetics | Designed by Faijan
+        </div>
+    </footer>
+</section>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nargish Cosmetics - About Us</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+  <style>/* Header Styling */
+    
+    .gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+    
+    header {
+    
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #ddd; /* Light gray border */
+    }
+    
+    header h1 {
+      margin: 0;
+      font-size: 4em;
+      color: #ffffff;
+        padding: 20px 0;
+        border-bottom: 2px solid hsl(193, 95%, 68%);
+       
+    }
+    nav {
+      margin-top: 10px;
+    }
+    
+    nav a {
+      text-decoration: none;
+      color: #ffffff; /* Blue color for links */
+      margin: 0 15px;
+      font-size: 2em;
+    }
+    
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .footer {
+  
+  color: #eceef4;
+  padding: 30px 0;
+}
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+h1:hover {
+            
+            text-decoration: underline; /* Underline effect on hover */
+            transform: translateX(-20px);
+           
+        }
+        .grid-container {
+            
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 columns */
+            gap: 16px;
+            padding: 20px;
+            grid-auto-rows: min-content; /* Ensures row height adjusts to content */
+        }
+     
+       
+        .grid-item {
+            
+            border: 4px solid #130d0d; 
+           
+            overflow: hidden;
+            text-align: center;
+            padding: 8px;
+        }
+
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .grid-item h3 {
+            margin: 8px 0 4px;
+            font-size: 1.2em;
+        }
+
+     
+        .grid-item:hover {
+           
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .grid-item:hover img {
+            transform: scale(1.05); /* Zoom effect */
+            animation: bounce 1s;
+           
+        }
+      
+        .main {
+          background-color: #f0f0f0;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Create two equal columns */
+    gap: 10px; /* Space between columns */
+}
+
+.grid-item {
+    padding: 20px; /* Padding inside columns */
+    
+    border: 1px solid #ddd; /* Border for columns */
+}
+
+
+.footer-container {
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1700px;
+  margin: 5 auto;
+  padding: 40 30px;
+  color: hsl(0, 0%, 0%);
+}
+.footer-section:hover {
+          transform: scale(1.05); /* Slightly enlarge the section on hover */
+          color: hsl(0, 0%, 100%); /* Change text color on hover */
+      }
+.footer-section {
+  flex: 1;
+  margin: 20px;
+  min-width: 200px;
+}
+
+.footer-section h2 {
+  font-size: 35px;
+  margin-right: 300px;
+  
+ 
+  
+ 
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: hsl(0, 0%, 0%);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ffffff;
+ 
+}
+ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul li {
+            font-size: 20px; /* Menu item font size */
+        }
+        ul li a {
+            text-decoration: none;
+            color: #333; /* Link color */
+        }
+footer-section.social button:hover {
+          background-color: hsl(0, 0%, 100%); /* Change to your preferred color */
+      }
+
+.footer-section p, .footer-section form, .footer-section .social-links {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+
+.footer-section input, .footer-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  
+}
+
+.footer-section button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e91e63;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  
+}
+
+.footer-section button:hover {
+  background-color: #c2185b;
+}
+
+.social-icons {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+      }
+      .social-icons a {
+          text-decoration: none;
+      }
+      .social-icons img {
+          width: 50px;
+          height: 45px;
+      }
+      h2:hover {
+          color: hsl(0, 0%, 97%) /* Change to your preferred color */
+         
+      }
+      .social-icons img:hover {
+          transform: scale(1.1);
+          opacity: 0.8;
+      }
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #f2ebeb;
+  margin-top: 20px;
+}
+    </style>
+</head>
+<body>
+  <section id="title" class="gradient-background">
+
+    <div class="container col-xxl-8 px-4 pt-5">
+
+  <header>
+    <h1>𝓝𝓪𝓻𝓰𝓲𝓼𝓱 𝓒𝓸𝓼𝓶𝓮𝓽𝓲𝓬𝓼</h1>
+    <nav>
+      <a href="faijan.html">𝓗𝓸𝓶𝓮</a>
+      <a href="product.html">𝓟𝓻𝓸𝓭𝓾𝓬𝓽𝓼</a>
+      <a href="about.html">𝓐𝓫𝓸𝓾𝓽 𝓤𝓼</a>
+      <a href="contact.html">𝓢𝓮𝓻𝓿𝓲𝓬𝓼</a>
+      
+    </nav>
+  </header>  
+
+  </section>
+  <div class="grid-container">
+    <div class="grid-item">
+        <img src="https://media6.ppl-media.com/tr:w-457,ar-636-847,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1722247869_haircare.jpg" alt="Product 1">
+        
+        
+    </div>
+    <div class="grid-item">
+        <img src="https://media6.ppl-media.com/tr:w-457,ar-636-847,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1722247866_bodycare.jpg" alt="Product 2">
+        
+        
+    </div>
+    <div class="grid-item">
+        <img src="https://media6.ppl-media.com/tr:w-457,ar-636-847,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1722247872_makeup.jpg" alt="Product 3">
+     
+        
+    </div>
+    <div class="grid-item">
+        <img src="https://media6.ppl-media.com/tr:w-457,ar-636-847,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1722247874_skincare.jpg" alt="Product 4">
+       
+    </div>
+</div>
+<div class="grid-container">
+  <div class="grid-item">
+      <img src="https://media6.ppl-media.com/tr:w-457,ar-636-847,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1722247869_haircare.jpg" alt="Product 1">
+      
+      
+  </div>
+  <div class="grid-item">
+      <img src="https://media6.ppl-media.com/tr:w-457,ar-636-847,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1722870395_globalstore.jpg" alt="Product 2">
+      
+      
+  </div>
+  <div class="grid-item">
+      <img src="https://media6.ppl-media.com/tr:w-457,ar-636-847,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1722247865_appliances.jpg" alt="Product 3">
+   
+      
+  </div>
+  <div class="grid-item">
+      <img src="https://media6.ppl-media.com/tr:w-457,ar-636-847,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1722247874_skincare.jpg" alt="Product 4">
+     
+  </div>
+</div>
+         
+  <!-- About page content goes here -->
+  <section id="title" class="gradient-background">
+    <main class="main">
+      <div class="grid-item">
+          <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1723398712_cetaphil-3.jpg" alt="Image 1">
+      </div>
+      <div class="grid-item">
+          <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1723370983_renee.jpg" alt="Image 2">
+      </div>
+  </main>
+  
+  <main class="main">
+      <div class="grid-item">
+          <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1723370988_streax-streax-pro.jpg" alt="Image 1">
+      </div>
+      <div class="grid-item">
+          <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1723370970_loreal-proff.jpg" alt="Image 2">
+      </div>
+  </main>
+  <main class="main">
+      <div class="grid-item">
+          <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1723436822_aclt_combo.jpg" alt="Image 1">
+      </div>
+      <div class="grid-item">
+          <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1723370970_loreal-proff.jpg" alt="Image 2">
+      </div>
+  </main>
+    
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section about">
+            <h2>𝓝𝓪𝓻𝓰𝓲𝓼𝓱 𝓒𝓸𝓼𝓶𝓮𝓽𝓲𝓬𝓼</h2>
+            <p>𝑨𝒕 𝑵𝒂𝒓𝒈𝒊𝒔𝒉 𝑪𝒐𝒔𝒎𝒆𝒕𝒊𝒄𝒔, 𝒘𝒆 𝒃𝒆𝒍𝒊𝒆𝒗𝒆 𝒊𝒏 𝒃𝒆𝒂𝒖𝒕𝒚 𝒕𝒉𝒂𝒕 𝒆𝒎𝒑𝒐𝒘𝒆𝒓𝒔. 𝑶𝒖𝒓 𝒑𝒓𝒐𝒅𝒖𝒄𝒕𝒔 𝒂𝒓𝒆 𝒄𝒓𝒂𝒇𝒕𝒆𝒅 𝒘𝒊𝒕𝒉 𝒕𝒉𝒆 𝒇𝒊𝒏𝒆𝒔𝒕 𝒊𝒏𝒈𝒓𝒆𝒅𝒊𝒆𝒏𝒕𝒔 𝒕𝒐 𝒆𝒏𝒔𝒖𝒓𝒆 𝒚𝒐𝒖 𝒍𝒐𝒐𝒌 𝒂𝒏𝒅 𝒇𝒆𝒆𝒍 𝒚𝒐𝒖𝒓 𝒃𝒆𝒔𝒕.</p>
+        </div>
+        <div class="footer-section links">
+            <h2>𝑸𝒖𝒊𝒄𝒌 𝑳𝒊𝒏𝒌𝒔</h2>
+            <ul>
+                <li><a href="#">𝓗𝓸𝓶𝓮</a></li>
+                <li><a href="#">𝓐𝓫𝓸𝓾𝓽 𝓤𝓼</a></li>
+                <li><a href="#">𝓟𝓻𝓸𝓭𝓾𝓬𝓽𝓼</a></li>
+                <li><a href="#">𝓢𝓮𝓻𝓿𝓲𝓬𝓼</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section contact-form">
+           <h2>𝑭𝒐𝒍𝒍𝒐𝒘 𝑴𝒆</h2>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="https://img.icons8.com/?size=100&id=118568&format=png&color=000000" alt="Facebook">
+                </a>
+               
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3670/3670125.png" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com/in/faijan-ali-8b3720228?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                    <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+        <div class="footer-section social">
+            <h2>𝑪𝒐𝒏𝒕𝒂𝒄𝒕 𝑼𝒔</h2>
+            
+            <form action="#" method="post">
+                <input type="afaijan043@mail.com" name="email" placeholder="apnakaam@mail.com">
+                <textarea name="massege" placeholder="Your query"></textarea>
+                <button type="submit">Send</button>
+            </form>
+       
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 Nargish Cosmetics | Designed by Faijan
+    </div>
+</footer>
+ </section>
+
+</body>
+</html>
